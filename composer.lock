@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e26914a23a8e1b04db0898cd8a65d72a",
+    "content-hash": "c5295779d8c37adcda0c12844e872561",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -349,6 +349,94 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "cybercog/laravel-ownership",
+            "version": "5.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cybercog/laravel-ownership.git",
+                "reference": "38a6a81e7d187c57461b8f112943dce20e0e31e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cybercog/laravel-ownership/zipball/38a6a81e7d187c57461b8f112943dce20e0e31e6",
+                "reference": "38a6a81e7d187c57461b8f112943dce20e0e31e6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0|^10.0",
+                "illuminate/support": "^9.0|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.3",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cog\\Laravel\\Ownership\\Providers\\OwnershipServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cog\\Laravel\\Ownership\\": "src/",
+                    "Cog\\Contracts\\Ownership\\": "contracts/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Komarev",
+                    "email": "anton@komarev.com",
+                    "homepage": "http://komarev.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Ownership simplify management of Eloquent model's owner.",
+            "homepage": "https://komarev.com/sources/laravel-ownership",
+            "keywords": [
+                "author",
+                "cog",
+                "copyright",
+                "creator",
+                "cybercog",
+                "domain",
+                "eloquent",
+                "laravel",
+                "maker",
+                "master",
+                "morph",
+                "ownable",
+                "owned",
+                "owner",
+                "ownership",
+                "polymorphic",
+                "proprietor",
+                "trait"
+            ],
+            "support": {
+                "docs": "https://github.com/cybercog/laravel-ownership/wiki",
+                "email": "open@cybercog.su",
+                "issues": "https://github.com/cybercog/laravel-ownership/issues",
+                "source": "https://github.com/cybercog/laravel-ownership",
+                "wiki": "https://github.com/cybercog/laravel-ownership/wiki"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/antonkomarev",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-02-24T09:28:34+00:00"
         },
         {
             "name": "danharrin/date-format-converter",
@@ -8126,6 +8214,78 @@
     ],
     "packages-dev": [
         {
+            "name": "beyondcode/laravel-comments",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tushargugnani/laravel-comments.git",
+                "reference": "aede695363a2e5efd0fc8e266811f0daf9cf601e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tushargugnani/laravel-comments/zipball/aede695363a2e5efd0fc8e266811f0daf9cf601e",
+                "reference": "aede695363a2e5efd0fc8e266811f0daf9cf601e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6|^5.0|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^7.0|^8.0|9.2.*|^9.5.10"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\Comments\\CommentsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BeyondCode\\Comments\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "BeyondCode\\Comments\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondcode.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add comments to your Laravel application",
+            "homepage": "https://github.com/beyondcode/laravel-comments",
+            "keywords": [
+                "beyondcode",
+                "comments",
+                "laravel-comments"
+            ],
+            "support": {
+                "source": "https://github.com/tushargugnani/laravel-comments/tree/master"
+            },
+            "time": "2023-10-17T11:13:49+00:00"
+        },
+        {
             "name": "brianium/paratest",
             "version": "v7.3.0",
             "source": {
@@ -11361,7 +11521,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "beyondcode/laravel-comments": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
